@@ -1,0 +1,105 @@
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(250, 210, 218);
+    background-size: cover;
+    padding: 10px;
+}
+.todo-app{
+    width:100%;
+    max-width: 540px;
+    background: rgb(247, 249, 250);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    
+}
+.todo-app h2{
+    color: rgb(255, 2, 141);
+    
+    
+    margin-bottom: 20px;
+    text-align: center;
+}
+.container img{
+    width: 150px;
+    margin-left: 0;
+    float: left;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(250, 210, 218);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: rgb(228, 56, 150);
+    color: lightcoral;
+    font-size: 16px;
+    cursor:pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOMebxdFJNVOGip-uCXVSUlcQhgZXUqhiOFA&s);
+    background-color: rgb(236, 222, 231);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: block;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(images/https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOMebxdFJNVOGip-uCXVSUlcQhgZXUqhiOFA&s);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    background: #edeef0;
+
+}
+.container h1{
+    text-align: center;
+}
